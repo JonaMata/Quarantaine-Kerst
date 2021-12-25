@@ -15,7 +15,7 @@ html {
     src: url(MerryChristmasFlake.ttf);
 }
 
-#page {
+.container {
     background: rgba(0,0,0,0.5);
     min-width: 300px;
     width: 50%;
@@ -24,9 +24,17 @@ html {
     padding: 20px;
 }
 
-#page img {
+.container img {
     width: 60%;
     margin: 0 20%;
+}
+
+.footer {
+    font-size: .5em;
+}
+
+a {
+    color: white;
 }
 
 h1 {
@@ -40,6 +48,12 @@ h2 {
     font-family: Christmas;
     font-weight: normal;
     font-size: 2rem;
+}
+
+h3 {
+    font-family: Christmas;
+    font-weight: normal;
+    font-size: 1.5rem;
 }
 
 /*Snowflakes*/
