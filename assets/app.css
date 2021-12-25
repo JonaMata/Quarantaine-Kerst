@@ -2,7 +2,8 @@ html {
     background: rgb(100,104,147);
     background: linear-gradient(0deg, rgba(100,104,147,1) 0%, rgba(0,3,73,1) 100%);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
     overflow-x: hidden;
     color: white;
     font-size: min(3vh, 3vw);
