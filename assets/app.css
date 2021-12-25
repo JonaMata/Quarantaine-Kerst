@@ -1,0 +1,134 @@
+html {
+    background: rgb(100,104,147);
+    background: linear-gradient(0deg, rgba(100,104,147,1) 0%, rgba(0,3,73,1) 100%);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow-x: hidden;
+    color: white;
+    font-size: min(3vh, 3vw);
+    min-height: 100%;
+}
+
+@font-face {
+    font-family: Christmas;
+    src: url(MerryChristmasFlake.ttf);
+}
+
+#page {
+    background: rgba(0,0,0,0.5);
+    min-width: 300px;
+    width: 50%;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#page img {
+    width: 60%;
+    margin: 0 20%;
+}
+
+h1 {
+    font-family: Christmas;
+    font-weight: normal;
+    text-align: center;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: Christmas;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+/*Snowflakes*/
+.snowflakes {
+    width: 100vw; height: 140vh;
+    position: fixed; top: -10vh; left: 0;
+    z-index: -1;
+}
+
+.snowflakes i, .snowflakes i:after, .snowflakes i:before { background: white; }
+.snowflakes i {
+    display: inline-block;
+    -webkit-animation: snowflakes 3s linear 2s 20;
+    -moz-animation: snowflakes 3s linear 2s 20;
+    position: relative;
+}
+.snowflakes i:after, .snowflakes i:before {
+    height: 100%;
+    width: 100%;
+    content: ".";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    -webkit-transform: rotate(120deg);
+}
+.snowflakes i:before { -webkit-transform: rotate(240deg); }
+
+@-webkit-keyframes snowflakes {
+    0% {
+        -webkit-transform: translate3d(0,0,0) rotate(0deg) scale(0.6);
+    }
+    100% {
+        -webkit-transform: translate3d(15px, 140vh, 0px) rotate(360deg) scale(0.6);
+    }
+}
+
+.snowflakes i:nth-child(3n) {
+    width: 16px; height: 4px;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: 30;
+    -webkit-transform-origin: right -45px;
+}
+
+.snowflakes i:nth-child(3n+1) {
+    width: 24px; height: 6px;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-iteration-count: 45;
+    -webkit-transform-origin: right -30px;
+}
+
+.snowflakes i:nth-child(3n+2) {
+    width: 32px; height: 8px;
+    -webkit-animation-duration: 8s;
+    -webkit-animation-iteration-count: 60;
+    -webkit-transform-origin: right -15px;
+}
+
+/* different delays so they don't all start at the same time */
+.snowflakes i:nth-child(7n) {
+    opacity:.3;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-timing-function:ease-in;
+}
+.snowflakes i:nth-child(7n+1) {
+    opacity:.4;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-timing-function:ease-out;
+}
+.snowflakes i:nth-child(7n+2) {
+    opacity:.5;
+    -webkit-animation-delay: 1.5s;
+    -webkit-animation-timing-function:linear;
+}
+.snowflakes i:nth-child(7n+3) {
+    opacity:.6;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-timing-function:ease-in;
+}
+.snowflakes i:nth-child(7n+4) {
+    opacity:.7;
+    -webkit-animation-delay: 2.5s;
+    -webkit-animation-timing-function:linear;
+}
+.snowflakes i:nth-child(7n+5) {
+    opacity:.8;
+    -webkit-animation-delay: 3s;
+    -webkit-animation-timing-function:ease-out;
+}
+.snowflakes i:nth-child(7n+6) {
+    opacity:.9;
+    -webkit-animation-delay: 3.5s;
+    -webkit-animation-timing-function:ease-in;
+}
